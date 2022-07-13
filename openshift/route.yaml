@@ -1,10 +1,10 @@
 apiVersion: route.openshift.io/v1
 kind: Route
 metadata:
-  name: sberTech-route
+  name: sber-tech-route
 spec:
   to:
     kind: Service
-    name: sberTech-service
+    name: sber-tech-service
   port:
     targetPort: 8080

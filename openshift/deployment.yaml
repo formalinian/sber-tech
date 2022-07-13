@@ -1,19 +1,19 @@
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name: sberTech-deployment
+  name: sber-tech-deployment
 spec:
   selector:
     matchLabels:
-      app: sberTech
+      app: sber-tech
   replicas: 1
   template:
     metadata:
       labels:
-        app: sberTech
+        app: sber-tech
     spec:
       containers:
-        - name: sberTech
+        - name: sber-tech
           image: soppeallod/sbertech
           ports:
             - containerPort: 8080
