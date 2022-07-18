@@ -47,7 +47,7 @@ env:
   # Registries such as GHCR, Quay.io, and Docker Hub are supported.
   IMAGE_REGISTRY: https://hub.docker.com/repository/docker/soppeallod/sbertech
   IMAGE_REGISTRY_USER: soppeallod
-  IMAGE_REGISTRY_PASSWORD: af10eaa9-d43d-4cd5-90ef-470c523d34cb
+  IMAGE_REGISTRY_PASSWORD: ${{ secrets.IMAGE_REGISTRY_PASSWORD }}
 
   # 🖊️ EDIT to specify custom tags for the container image, or default tags will be generated below.
   IMAGE_TAGS: "latest"
